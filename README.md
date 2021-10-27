@@ -1,3 +1,3 @@
 # My-Music-Player
  Web based Music Player with HTML, CSS, Javascript
-![image](https://user-images.githubusercontent.com/40732440/139128467-6995c436-8e9c-4230-96a2-7d685d6ed0f1.png)
+![screencapture-127-0-0-1-5500-2021-10-28-00_08_10](https://user-images.githubusercontent.com/40732440/139130983-67519e0f-9624-4f67-993a-ec105b32f469.png)
