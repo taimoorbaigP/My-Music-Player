@@ -1,0 +1,12 @@
+- Round Progress Bar
+- Rotating Album cover
+- Visualizer
+- OnClick Theme Change
+- Lofi Music
+
+
+- Download Option
+- InnerText = Pause when music is paused
+- Volume
+- Music Speed 1.5x and Database Server https://www.youtube.com/watch?v=dSpoe873JCE
+- Change Color when list pops https://www.youtube.com/watch?v=dXijp2M3FVo&t=0s
