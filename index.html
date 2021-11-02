@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -31,6 +36,8 @@
             <span class="duration"></span>
         </div>
         <audio id="main-audio" src=""></audio>
+        
+        
     </div>
     <div class="controls">
         <i id="repeat-plist" class="material-icons">repeat</i>
@@ -41,6 +48,14 @@
         <i id="next" class="material-icons">fast_forward</i>
         <i id="more-music" class="material-icons">queue_music</i>
     </div>
+
+    <!-- Volume Button -->
+     <div class="volume">
+        <div><label id="volume_show">40</label></div>
+        <i class="material-icons" aria-hidden="true" onclick="mute_sound()" id="volume_icon">volume_up</i>
+        <input type="range" min="0" max="100" value="40" onchange="volume_change()" id="volume">
+     </div>       
+    
     <div class="music-list">
         <div class="header">
             <div class="row">

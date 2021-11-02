@@ -12,7 +12,10 @@ progressArea = wrapper.querySelector(".progress-area"),
 progressBar = wrapper.querySelector(".progress-bar"),
 musicList = wrapper.querySelector(".music-list");
 showMoreBtn = wrapper.querySelector("#more-music"),
+muteBtn = wrapper.querySelector(".volume"),
 hideMusicBtn = musicList.querySelector("#close");
+let recent_volume= document.querySelector('#volume');
+let volume_show = document.querySelector('#volume_show');
 //load random music on page refresh
 let musicIndex = Math.floor((Math.random() * allMusic.length)+1);
 
@@ -82,6 +85,30 @@ nextBtn.addEventListener("click", ()=>{
 prevBtn.addEventListener("click", ()=>{
     prevMusic (); //calling next music function
 });
+
+// Change volume
+ function volume_change(){
+	volume_show.innerHTML = recent_volume.value;
+	mainAudio.volume = recent_volume.value / 100;
+} 
+
+//unmute sound function
+function unmute_sound(){
+    mainAudio.volume = 15;
+	volume.value = 15;
+	volume_show.innerHTML = 15;
+    muteBtn.querySelector("i").innerText = "volume_up"
+}
+
+//mute sound function
+function mute_sound(){
+	mainAudio.volume = 0;
+	volume.value = 0;
+	volume_show.innerHTML = 0;
+    muteBtn.querySelector("i").innerText = "volume_off";
+    (mainAudio.volume == 0) ? mute_sound : unmute_sound;
+}
+
 
 //update progress bar width according to music current time
 mainAudio.addEventListener("timeupdate", (e)=>{
