@@ -60,7 +60,7 @@ body{
 }
 .top-bar span{
     font-family: 'Fruktur', cursive;
-    font-size: 18px;
+    font-size: 22px;
     color: #A348A6;
     text-align: center;
 }
@@ -96,12 +96,12 @@ body{
     color: var(--lightblack);
 }
 .song-details .name{
-    font-size: 21px;
-    color: var(--pink);
+    font-size: 24px;
+    color: var(--violet);
 }
 .song-details .artist{
     opacity: 0.9;
-    font-size: 18px;
+    font-size: 21px;
     color: var(--lightblack);
 }
 .progress-area{
