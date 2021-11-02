@@ -31,7 +31,10 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+
 }
 .wrapper{
     width: 380px;
@@ -198,15 +201,17 @@ body{
     width: inherit;
     margin: 10px 0;
     -webkit-appearance: none;
-    background-color: #861657;
-    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+    background-color: #fba8a4;
+background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
     border-radius: 50px;
   }
 
   /* Volume status */
     #volume_show{
-        background-color: #f9d29d;
-        background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
+        border-radius: 5px;
+        background-color: #fee2f8;
+background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+
     }
 
 
