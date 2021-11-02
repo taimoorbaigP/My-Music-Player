@@ -85,6 +85,7 @@ body{
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 1.2rem 3rem 0.5rem Orgba(0, 0, 0, 0.4);
+    transition:cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .song-details{
     text-align: center;
