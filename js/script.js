@@ -97,9 +97,10 @@ function unmute_sound(){
     mainAudio.volume = 15;
 	volume.value = 15;
 	volume_show.innerHTML = 15;
-    muteBtn.querySelector("i").innerText = "volume_up"
+    muteBtn.querySelector("i").innerText = "volume_up";
 }
 
+/* mainAudio.volume = 0 ? mute_sound() : mainAudio.volume = recent_volume.value; */
 //mute sound function
 function mute_sound(){
 	mainAudio.volume = 0;
